@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'LoginPage.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class UserOption extends StatelessWidget {
   void _userlogin() {
-    print('Login Executed');
+    var phone = "https://www.google.com/maps/";
+    launch("$phone");
   }
 
   Widget _userschoice(BuildContext context) {
@@ -98,7 +100,9 @@ class UserOption extends StatelessWidget {
                                   color: Colors.red,
                                 ),
                                 color: Color.fromRGBO(255, 255, 255, 0.9),
-                                onPressed: () {},
+                                onPressed: () {
+                                  _userlogin();
+                                },
                                 label: Text(
                                   'Register',
                                   style: TextStyle(

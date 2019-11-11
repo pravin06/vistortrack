@@ -8,7 +8,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:vistortrack/main.dart';
 import 'package:vistortrack/splashscreen/splashscree.dart';
 
 void main() {
