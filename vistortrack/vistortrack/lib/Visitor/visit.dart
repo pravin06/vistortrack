@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '../Visitor/visitList.dart';
-import '../Visitor/appointmentList.dart';
+import '../Appoinments/appointmentList.dart';
 import '../Visitor/MydataList.dart';
 
 class VisitorList extends StatefulWidget {
@@ -46,7 +46,7 @@ class VisitorListState extends State<VisitorList> {
     CurvedNavigationBar _cbr = CurvedNavigationBar(
       key: _bottomNavigationKey,
       items: <Widget>[
-        Icon(Icons.add, size: 30),
+        Tooltip(message: 'Vistor', child: Icon(Icons.add, size: 30)),
         Icon(Icons.list, size: 30),
         Icon(Icons.compare_arrows, size: 30),
         Icon(Icons.accessibility, size: 30),

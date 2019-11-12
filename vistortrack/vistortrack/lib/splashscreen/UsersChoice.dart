@@ -5,8 +5,15 @@ import 'package:url_launcher/url_launcher.dart';
 
 class UserOption extends StatelessWidget {
   void _userlogin() {
+    double lat = 13.0945075;
+    double logi = 80.2049674;
+    String geoUri = "http://maps.google.com/maps?q=loc:" +
+        lat.toString() +
+        "," +
+        logi.toString() +
+        "";
     var phone = "https://www.google.com/maps/";
-    launch("$phone");
+    launch("$geoUri");
   }
 
   Widget _userschoice(BuildContext context) {

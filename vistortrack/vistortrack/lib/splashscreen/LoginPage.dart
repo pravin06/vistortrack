@@ -44,7 +44,7 @@ class LoginPageState extends State<LoginPage> {
       ),
     );
     final passwordField = TextFormField(
-      obscureText: _showpass ? true : false,
+      obscureText: _showpass ? false : true,
       controller: _textpassword,
       style: TextStyle(fontFamily: 'Jose', fontSize: 16.0, color: Colors.white),
       decoration: InputDecoration(
@@ -61,7 +61,7 @@ class LoginPageState extends State<LoginPage> {
               }
             });
           },
-          icon: _showpass ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
+          icon: _showpass ? Icon(Icons.visibility) : Icon(Icons.visibility_off),
           color: Colors.white54,
         ),
         fillColor: Color.fromRGBO(255, 255, 255, 0.5),
